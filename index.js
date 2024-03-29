@@ -138,7 +138,7 @@ async function setMasks(envs) {
 
 // action entrypoint
 async function main() {
-  const path = core.getInput("path");
+  const path = core.getInput('path');
   try {
     // install direnv
     await installTools();
