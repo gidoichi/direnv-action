@@ -21,7 +21,7 @@ jobs:
           PR_URL: "${{ github.event.pull_request.html_url }}"
           GH_TOKEN: "${{ secrets.GITHUB_TOKEN }}"
       - name: Add auto-merge prefix
-        run: gh pr edit --title '[automerged] ${{ github.event.pull_request.title }}' "$PR_URL"
+        run: gh pr edit --title '[update:patch] ${{ github.event.pull_request.title }}' "$PR_URL"
         env:
           PR_URL: "${{ github.event.pull_request.html_url }}"
           GH_TOKEN: "${{ secrets.GITHUB_TOKEN }}"
