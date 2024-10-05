@@ -7,6 +7,8 @@ updates:
     # Check the npm registry for updates every day (weekdays)
     schedule:
       interval: "daily"
+    commit-message:
+      prefix: "[update:patch] "
 
   # Enable version updates for actions
   - package-ecosystem: github-actions
